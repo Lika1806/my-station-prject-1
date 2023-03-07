@@ -12,7 +12,7 @@ def pick_template():
             input_is_valid = True
         else:
             print("input is invalid, pleas try again: ")
-    if template == "0":
+    if template == 0:
         template = random.randint(1, 3)
     return template
 
@@ -23,6 +23,7 @@ def type_word(self):
 
 
 chosen_template = pick_template()
+print(f"You've chosen template number {chosen_template}, please input following words. ")
 if chosen_template == 1:
     number1 = type_word("number")
     if number1 == "1":
